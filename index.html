@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>A Distance Converter</title>
+</head>
+<body>
+    <div class="center">
+        <h1 class="calculatorTitle">Distance Converter</h1>
+        <div class="calculatorInputs">
+            <div class="calculatorInputsItem">
+                <label for="input_value">Value to convert:</label>
+                <br>
+                <input type="text" id="input_value" autofocus required>
+            </div>
+            <div class="calculatorInputsItem">
+                <br>
+                <label for="input">From:</label>
+                <select name="input" id="input">
+                    <option value="kilometer">km</option>
+                    <option value="metre">m</option>
+                    <option value="miles">miles</option>
+                    <option value="centimeter">cm</option>
+                </select>
+            </div>
+            <br>
+            <div class="calculatorInputsItem">
+                <label for="input">To:&nbsp;&nbsp;</label>
+                <select name="input" id="input">
+                    <option value="meter">m</option>
+                    <option value="kilometre">km</option>
+                    <option value="miles">miles</option>
+                    <option value="centimeter">cm</option>
+                </select>
+            </div>
+    </div>
+    <div class="calculatorContainer">
+        <form action="" class="calculatorForm">
+    <div class="calculatorButton">
+        <input type="submit" value="Calculate" class="calculateBtn" id="calculateBtn">
+        <input type="submit" value="Clear" class="clearBtn" id="clearBtn">
+    </div>
+    <div id="calculatorAnswer">Answer:</div>
+        </form>
+    </div>
+    </div>
+</body>
+</html>
