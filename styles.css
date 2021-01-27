@@ -45,7 +45,7 @@ body {
     border: 1px thin;
     background-color:#b3ffcc;
     color: #000;
-    border:none;
+    border:1px solid rgb(211, 208, 208);
     border-radius: 4px;
     padding: 2px 7px;
     font-size: 20px;
@@ -59,10 +59,10 @@ body {
    font-size: 15px;
    background-color:red;
    color: #fff;
-   border:none;
+   border:1px solid rgb(211, 208, 208);
    font-size: 20px;
    border-radius: 4px;
-    cursor: pointer;
+   cursor: pointer;
 }
 
 #calculatorAnswer {
@@ -71,4 +71,5 @@ body {
     padding-bottom: 2em;
     padding-right: .5em;
     background: #fff;
+    cursor: pointer;
 }
