@@ -12,7 +12,7 @@
         <div class="calculatorInputs">
             <div class="calculatorInputsItem">
                 <label for="input_value">Value to convert:</label>
-                <br>
+                <br><br>
                 <input type="number" id="input_value" autofocus required>
             </div>
             <div class="calculatorInputsItem">
@@ -39,8 +39,8 @@
     <div class="calculatorContainer">
         <form action="" class="calculatorForm">
     <div class="calculatorButton">
-        <input type="submit" value="Calculate" class="calculateBtn" id="calculateBtn">
-        <input type="submit" value="Clear" class="clearBtn" id="clearBtn">
+        <input type="submit" min="0" value="Calculate" class="calculateBtn" id="calculateBtn">
+        <input type="button" value="Clear" class="clearBtn" id="clearBtn">
     </div>
     <div id="calculatorAnswer">Answer:</div>
         </form>
