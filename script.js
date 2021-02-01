@@ -7,6 +7,9 @@ let output = document.getElementById('calculatorAnswer');
 
 let converter = new Converter(convertFrom.value, convertTo.value);
 
+inputValue.oninput = function(event) {
+    inputValue.value = Math.abs(event.target.value)
+}
 calculateButton.addEventListener('click', (event)=> {
   event.preventDefault();
   let input = inputValue.value;
@@ -15,6 +18,8 @@ calculateButton.addEventListener('click', (event)=> {
     convertType(`${convertFrom.value}/${convertTo.value}`)
   }
 })
+
+
 
 function convertType(type) {
   let input = inputValue.value;
@@ -43,5 +48,6 @@ function convertType(type) {
 }
 
 clearButton.addEventListener("click", function () {
-    converter.clearButton(inputValue.value)
+    inputValue.value = '';
+    output.innerText = '';
 })
